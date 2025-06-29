@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three.js Interface by Dannz</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Canvas for 3D rendering -->
+  <canvas id="c"></canvas>
+
+  <!-- Counter Display -->
+  <div id="counter">0</div>
+
+  <!-- Control Buttons -->
+  <div id="controlls">
+    <div>
+      <button id="forward">
+        <svg width="30" height="30" viewBox="0 0 10 10">
+          <g transform="rotate(0, 5,5)">
+            <path d="M5,4 L7,6 L3,6 L5,4" />
+          </g>
+        </svg>
+      </button>
+      <button id="left">
+        <svg width="30" height="30" viewBox="0 0 10 10">
+          <g transform="rotate(-90, 5,5)">
+            <path d="M5,4 L7,6 L3,6 L5,4" />
+          </g>
+        </svg>
+      </button>
+      <button id="backward">
+        <svg width="30" height="30" viewBox="0 0 10 10">
+          <g transform="rotate(180, 5,5)">
+            <path d="M5,4 L7,6 L3,6 L5,4" />
+          </g>
+        </svg>
+      </button>
+      <button id="right">
+        <svg width="30" height="30" viewBox="0 0 10 10">
+          <g transform="rotate(90, 5,5)">
+            <path d="M5,4 L7,6 L3,6 L5,4" />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- End Game / Retry Button -->
+  <div id="end">
+    <button id="retry">Retry</button>
+  </div>
+
+  <!-- Credit -->
+  <div class="sign">
+    by Dannz / <a href="https://github.com/dannz510" target="_blank">GitHub.com</a>
+  </div>
+
+  <!-- Your Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
